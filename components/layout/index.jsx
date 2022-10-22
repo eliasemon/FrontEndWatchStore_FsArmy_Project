@@ -2,6 +2,7 @@ import WeeklyProducts from "../weeklyProducts";
 import styled from "styled-components";
 import MostPremiumWatch from "../mostPremiumWatch";
 import OurSpecialFeatures from "../ourSpecialFeatures";
+import SummerSale from "../summerSale";
 
 const Container = styled.div`
   max-width: 1140px;
@@ -18,6 +19,9 @@ const Layout = () => {
         <MostPremiumWatch />
       </Container>
       <OurSpecialFeatures />
+      <Container>
+        <SummerSale />
+      </Container>
     </>
   );
 };

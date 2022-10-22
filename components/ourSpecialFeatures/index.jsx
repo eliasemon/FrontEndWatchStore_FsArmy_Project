@@ -13,7 +13,7 @@ const FullWidthContainer = styled.div`
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
 
   max-width: 1140px;
