@@ -14,6 +14,11 @@ const GlobalStyle = createGlobalStyle`
 p{
   font-size: 1.125rem;
   font-weight: 400;
+  color: #333;
+}
+
+span{
+  display: inline-block;
 }
 
 input::-webkit-outer-spin-button,

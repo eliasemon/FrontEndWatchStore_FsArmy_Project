@@ -12,7 +12,6 @@ const Disclaimer = styled.span`
   color: #7678ed;
   font-size: 0.94rem;
   margin-top: 0.94rem;
-  display: inline-block;
 `;
 
 const MostPremiumWatch = () => {
