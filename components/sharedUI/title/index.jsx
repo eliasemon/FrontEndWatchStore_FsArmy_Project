@@ -10,7 +10,7 @@ const Bar = styled.div`
   border-radius: 0.3rem;
   width: 3.2rem;
   height: 0.25rem;
-  margin: 0.37rem 0 1.87rem 0;
+  margin: 0.37rem 0 1.6rem 0;
 `;
 
 const Title = ({ content }) => {

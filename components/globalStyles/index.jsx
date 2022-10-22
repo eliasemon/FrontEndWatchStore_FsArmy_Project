@@ -10,6 +10,12 @@ const GlobalStyle = createGlobalStyle`
   border: none;
   font-family: "Montserrat", sans-serif;
 }
+
+p{
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
