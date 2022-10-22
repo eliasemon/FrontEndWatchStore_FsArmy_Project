@@ -27,6 +27,5 @@ export const Rating = ({ rates }) => {
     stars.push(<SingleStar />);
     i++;
   }
-  console.log(stars);
   return <Multiple>{stars}</Multiple>;
 };
