@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { BlockText, InlineText } from "../texts";
-import { Rating } from "../rating";
+import { Rating } from "./rating";
 import { FaCartPlus, FaInfo } from "react-icons/fa";
 
 import Button from "./../buttons/index";

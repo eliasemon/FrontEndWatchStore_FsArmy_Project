@@ -24,7 +24,7 @@ export const Rating = ({ rates }) => {
   const stars = [];
   let i = 0;
   while (i < rates) {
-    stars.push(<SingleStar />);
+    stars.push(<SingleStar key={i} />);
     i++;
   }
   return <Multiple>{stars}</Multiple>;
