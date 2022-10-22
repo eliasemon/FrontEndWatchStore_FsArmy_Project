@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
-export const WhiteBackground = styled.div`
-    background-color: #fff;
+const Background = styled.div`
+    background-color: ${({bg, theme}) => bg === 'primary' ? theme?.color?.primaryColor : theme?.color?.secondaryColor};
 `
 
-export const GrayBackground = styled.div`
-    background-color: #eaeaff;
-`
+export default Background
