@@ -6,7 +6,6 @@ const GlobalStyle = createGlobalStyle`
   padding: 0;
   box-sizing: border-box;
   border: none;
-  font-family: "Montserrat", sans-serif;
 }
 
 input::-webkit-outer-spin-button,
@@ -15,7 +14,7 @@ input::-webkit-inner-spin-button {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: ${({theme}) => theme?.typography};
 }
 `;
 export default GlobalStyle;
