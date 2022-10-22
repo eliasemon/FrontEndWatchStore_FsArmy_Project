@@ -1,8 +1,4 @@
-// import Head from 'next/head'
-// import Image from 'next/image'
-// import styles from '../styles/Home.module.css'
-
-import Head from "next/head";
+import Layout from "../components/layout";
 
 export default function Home() {
   return (
@@ -12,7 +8,8 @@ export default function Home() {
         <link rel="icon" href="/watch-favicon.ico" />
       </Head> */}
 
-      <h1> Hello Watch Store </h1>
+      <p> Hello Watch Store </p>
+      <Layout />
     </>
   );
 }
