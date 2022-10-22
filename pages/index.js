@@ -3,6 +3,10 @@
 // import styles from '../styles/Home.module.css'
 
 import Head from "next/head";
+import { ThemeProvider } from "styled-components";
+import theme from "./theme";
+import { CardGroup } from "./../components/UI/cards";
+import Container from "./../components/container/index";
 
 export default function Home() {
   return (
@@ -11,8 +15,11 @@ export default function Home() {
         <title>Watch Store #Team-F</title>
         <link rel="icon" href="/watch-favicon.ico" />
       </Head> */}
-
-      <h1> Hello Watch Store </h1>
+      <ThemeProvider theme={theme}>
+        <Container>
+          <CardGroup />
+        </Container>
+      </ThemeProvider>
     </>
   );
 }
