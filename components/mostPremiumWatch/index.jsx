@@ -9,7 +9,7 @@ const Wrapper = styled.div`
 `;
 
 const Disclaimer = styled.span`
-  color: #7678ed;
+  color: ${({ theme }) => theme?.color?.primaryColor};
   font-size: 0.94rem;
   margin-top: 0.94rem;
 `;

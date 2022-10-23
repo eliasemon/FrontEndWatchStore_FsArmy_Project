@@ -31,30 +31,30 @@ const Content = styled.div`
 `;
 
 const Title = styled.h3`
-  font-size: 30px;
-  font-weight: 700;
-  color: #fff;
+  font-size: ${({ theme }) => theme?.fontSizes?.lg};
+  font-weight: ${({ theme }) => theme?.fontWeight?.bold};
+  color: ${({ theme }) => theme?.color?.whiteColor};
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 `;
 
 const Offer = styled.div`
-  border: 3px solid #fff;
+  border: 3px solid ${({ theme }) => theme?.color?.whiteColor};
   border-radius: 0.5rem;
   display: inline-block;
-  padding: 1.4rem 1.7rem;
+  padding: 1.2rem;
 
   & p {
-    color: #fff;
+    color: ${({ theme }) => theme?.color?.whiteColor};
     font-size: 1.4rem;
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: ${({ theme }) => theme?.fontWeight?.medium};
     margin-bottom: 0.4rem;
   }
   & span {
-    color: #7678ed;
-    font-size: 1.6rem;
-    font-weight: 700;
+    color: ${({ theme }) => theme?.color?.primaryColor};
+    font-size: ${({ theme }) => theme?.fontSizes?.lg};
+    font-weight: ${({ theme }) => theme?.fontWeight?.bold};
   }
 `;
 
@@ -68,13 +68,13 @@ const ShopBtn = styled.div`
   align-items: center;
   gap: 0.6rem;
   & * {
-    color: #fff;
-    font-size: 1.3rem;
+    color: ${({ theme }) => theme?.color?.whiteColor};
+    font-size: ${({ theme }) => theme?.fontSizes?.md};
     text-decoration: none;
-    font-weight: 600;
+    font-weight: ${({ theme }) => theme?.fontWeight?.semiBold};
     transition: all 0.3s;
     &:hover {
-      color: #7678ed;
+      color: ${({ theme }) => theme?.color?.primaryColor};
     }
   }
 `;

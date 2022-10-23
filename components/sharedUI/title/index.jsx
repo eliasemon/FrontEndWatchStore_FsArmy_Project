@@ -1,12 +1,17 @@
 import styled from "styled-components";
+import theme from "../../../pages/theme";
 
 const H3 = styled.h3`
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #333;
+  /* font-size: 1.6rem; */
+  /* font-size: ${(props) => props.theme?.fontSizes?.lg}; */
+  font-size: ${({ theme }) => theme?.fontSizes?.lg};
+  /* font-weight: 600; */
+  font-weight: ${({ theme }) => theme?.fontWeight.semiBold};
+  /* color: #333; */
+  color: ${({ theme }) => theme?.color?.textColor};
 `;
 const Bar = styled.div`
-  background: #7678ed;
+  background: ${({ theme }) => theme?.color?.primaryColor};
   border-radius: 0.3rem;
   width: 3.2rem;
   height: 0.25rem;

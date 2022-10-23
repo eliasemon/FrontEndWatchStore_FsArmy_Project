@@ -1,24 +1,22 @@
 import WeeklyProducts from "../weeklyProducts";
-import styled from "styled-components";
 import MostPremiumWatch from "../mostPremiumWatch";
 import OurSpecialFeatures from "../ourSpecialFeatures";
 import SummerSale from "../summerSale";
-
-const Container = styled.div`
-  max-width: 1140px;
-  padding: 0 15px;
-  margin: 0 auto;
-`;
+import Container from "../sharedUI/container";
+import Background from "../sharedUI/backgrounds";
 
 const Layout = () => {
   return (
     <>
       <Container>
-        <p>Layout</p>
         <WeeklyProducts />
         <MostPremiumWatch />
       </Container>
-      <OurSpecialFeatures />
+      <Background>
+        <Container>
+          <OurSpecialFeatures />
+        </Container>
+      </Background>
       <Container>
         <SummerSale />
       </Container>

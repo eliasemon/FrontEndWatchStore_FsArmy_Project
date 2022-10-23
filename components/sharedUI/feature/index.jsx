@@ -4,7 +4,7 @@ const FeatureWrap = styled.div`
   display: flex;
   align-items: center;
   gap: 0.7rem;
-  background: #fff;
+  background: ${({ theme }) => theme?.color?.whiteColor};
   border-radius: 10px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 1rem 0.9rem;
@@ -12,8 +12,8 @@ const FeatureWrap = styled.div`
 
 const FeatureTitle = styled.h4`
   font-size: 1rem;
-  font-weight: 700;
-  color: #7678ed;
+  font-weight: ${({ theme }) => theme?.fontWeight?.bold};
+  color: ${({ theme }) => theme?.color?.primaryColor};
 `;
 const FeatureText = styled.span`
   font-size: 0.9rem;
@@ -21,7 +21,7 @@ const FeatureText = styled.span`
 `;
 const Icon = styled.div`
   font-size: 2.8rem;
-  color: #7678ed;
+  color: ${({ theme }) => theme?.color?.primaryColor};
 `;
 
 const Feature = ({ title, description, icon }) => {
